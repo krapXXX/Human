@@ -3,11 +3,12 @@
 class Lawyer : public Human
 {
 	char* Firm;
-	double Salary;
+	double salary;
 public:
 	Lawyer();
 	Lawyer(const char* n, int a, const char* F, double S);
 	~Lawyer();
+	void Salary();
 	void Output();
 	void Input(const char* n, int a, const char* F, double S);
 };

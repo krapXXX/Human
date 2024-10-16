@@ -17,9 +17,12 @@ Human::Human(const char* Name, int Age)
 }
 void Human::Output()
 {
-	cout << "Output Human\n";
 	cout << "Name: " << name << endl
 		<< "Age: " << age << endl;
+}
+void Human::Salary()
+{
+	cout << "Salary of the human: not found" << endl;
 }
 void Human::Input() // ввод с клавиатуры
 {

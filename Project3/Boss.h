@@ -4,11 +4,12 @@
 class Boss : public Human
 {
 	char* Firm;
-	double Salary;
+	double salary;
 public:
 	Boss();
 	Boss(const char* n, int a, const char* F, double S);
 	~Boss();
+	void Salary();
 	void Output();
 	void Input(const char* n, int a, const char* C, double S);
 };

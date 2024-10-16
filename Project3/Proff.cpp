@@ -8,13 +8,13 @@ Proff::Proff()
 	name = nullptr;
 	age = 25;
 	Uni = nullptr;
-	Salary = 0;
+	salary = 0;
 }
 
 Proff::Proff(const char* n, int a, const char* U, double S) :Human(n, a)
 {
 	cout << "Construct Proff\n";
-	Salary = S;
+	salary = S;
 	Uni = new char[strlen(U) + 1];
 	strcpy_s(Uni, strlen(U) + 1, U);
 }
@@ -23,6 +23,11 @@ Proff::~Proff()
 {
 	delete[] Uni;
 	cout << "Destruct Proff\n";
+}
+
+void Proff::Salary()
+{
+	cout << "Salary of the proffesor: " << Salary << endl;
 }
 
 void Proff::Output()
@@ -46,7 +51,7 @@ void Proff::Input(const char* n, int a, const char* U, double S)
 	name = new char[strlen(n) + 1];
 	strcpy_s(name, strlen(n) + 1, n);
 	age = a;
-	Salary = S;
+	salary = S;
 	Uni = new char[strlen(U) + 1];
 	strcpy_s(Uni, strlen(U) + 1, U);
 }

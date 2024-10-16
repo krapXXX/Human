@@ -10,22 +10,39 @@ using namespace std;
 
 int main()
 {
-	Student s("Oleg",19,"Itstep",2000);
-	s.Output();
-	s.Input("Irina",20,"Politex",200);
-	s.Output();
+	//Student s("Oleg",19,"Itstep",2000);
 	Programmer p("Alex", 30, "Google", 65000);
-	p.Output();
 	Proff pr("Lily", 27, "N¹45", 15000);
-	pr.Output();
 	Boss b;
 	b.Input("Kate", 45, "Silk-SPA", 100000);
-	b.Output();
 	Lawyer l;
 	l.Input("Igor", 52, "LUHU", 30000);
-	l.Output();
 	Designer d;
 	d.Input("Varya", 18, "Boo", 1500);
+	/*s.Output();
+	s.Input("Irina",20,"Politex",200);
+	s.Output();
 	d.Output();
+	p.Output();
+	 pr.Output();
+    b.Output();
+     l.Output();*/
+	Human* human = nullptr;
+	cout << "Who do you want to Print?" << endl;
+	cout << "1 - Student" << endl;
+	cout << "2 - Programmer" << endl;
+	cout << "3 - Proffesor" << endl;
+	cout <<"4 - Boss" << endl;
+	cout << "5 - Lawyer" << endl;
+	cout << "6 - Designer" << endl;
+	int choice;
+	cin >> choice;
+	switch (choice)
+	{
+	case 1: 
+		human = new Student;
+		human -> Input("Oleg", 19, "Itstep", 2000);
+		break;
+	}
 
 }

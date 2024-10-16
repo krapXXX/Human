@@ -23,6 +23,10 @@ Student::~Student()
 	delete[] Univer;
 	cout << "Destruct Student\n";
 }
+void Student::Salary()
+{
+	cout << "Scolarship of the student: " << Salary << endl;
+}
 void Student::Output()
 {
 	cout << "Output Student\n";

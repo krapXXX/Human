@@ -8,13 +8,13 @@ Programmer::Programmer()
 	name = nullptr;
 	age = 25;
 	Company = nullptr;
-	Salary = 0;
+	salary = 0;
 }
 
 Programmer::Programmer(const char* n, int a, const char* C, double S):Human(n,a)
 {
 	cout << "Construct Programmer\n";
-	Salary = S;
+	salary = S;
 	Company = new char[strlen(C) + 1];
 	strcpy_s(Company, strlen(C) + 1, C);
 }
@@ -23,6 +23,11 @@ Programmer::~Programmer()
 {
 	delete[] Company;
 	cout << "Destruct Programmer\n";
+}
+
+void Programmer::Salary()
+{
+	cout << "Salary of the programmer: " << Salary << endl;
 }
 
 void Programmer::Output()
@@ -46,7 +51,7 @@ void Programmer::Input(const char* n, int a, const char* C, double S)
 	name = new char[strlen(n) + 1];
 	strcpy_s(name, strlen(n) + 1, n);
 	age = a;
-	Salary = S;
+	salary = S;
 	Company = new char[strlen(C) + 1];
 	strcpy_s(Company, strlen(C) + 1, C);
 }

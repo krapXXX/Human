@@ -9,6 +9,7 @@ public:
 	Student();
 	Student(const char* n, int a, const char* U, double S);
 	~Student();
+	void Salary();
 	void Output(); // переопределение метода Output в потомке!!
 	void Input(const char* n, int a, const char* U, double S); //замещение метода Input();
 };
