@@ -33,7 +33,8 @@ void Boss::Salary()
 void Boss::Output()
 {
 	cout << "Output Boss\n";
-	Human::Output();
+	cout << "Name: " << name << endl
+		<< "Age: " << age << endl;
 	cout << "Firm: " << Firm << endl
 		<< "Salary: " << salary << endl << endl;
 }

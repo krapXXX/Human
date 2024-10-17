@@ -33,7 +33,8 @@ void Proff::Salary()
 void Proff::Output()
 {
 	cout << "Output Proff\n";
-	Human::Output();
+	cout << "Name: " << name << endl
+		<< "Age: " << age << endl;
 	cout << "University: " << Uni << endl
 		<< "Salary: " << salary << endl << endl;
 }

@@ -15,7 +15,7 @@ Human::Human(const char* Name, int Age)
 	strcpy_s(name, strlen(Name) + 1, Name);
 	age = Age;
 }
-void Human::Output()
+/*void Human::Output()
 {
 	cout << "Name: " << name << endl
 		<< "Age: " << age << endl;
@@ -23,7 +23,7 @@ void Human::Output()
 void Human::Salary()
 {
 	cout << "Salary of the human: not found" << endl;
-}
+}*/
 void Human::Input() // ввод с клавиатуры
 {
 	if (name != nullptr)

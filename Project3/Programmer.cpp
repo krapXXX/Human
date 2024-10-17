@@ -33,7 +33,8 @@ void Programmer::Salary()
 void Programmer::Output()
 {
 	cout << "Output Programmer\n";
-	Human::Output();
+	cout << "Name: " << name << endl
+		<< "Age: " << age << endl;
 	cout << "Company: " << Company << endl
 		<< "Salary: " << salary << endl << endl;
 }

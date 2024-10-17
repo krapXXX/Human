@@ -92,4 +92,10 @@ int main()
 	}
 	human->Salary();
 
+
+	Human* humans[6]{ new Student("Oleg", 19, "Itstep", 2000), new Programmer("Alex", 30, "Google", 65000),new Proff("Lily", 27, "N¹45", 15000), new  Boss("Ann", 19, "Silk-SPA", 100000), new Lawyer("Igor", 52, "LUHU", 30000), new Designer("Varya", 18, "Boo", 1500) };
+	for (int i = 0; i < 6; i++)
+	{
+		humans[i]->Output();
+	}
 }

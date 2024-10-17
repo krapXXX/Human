@@ -30,7 +30,8 @@ void Student::Salary()
 void Student::Output()
 {
 	cout << "Output Student\n";
-	Human::Output();
+	cout << "Name: " << name << endl
+		<< "Age: " << age << endl;
 	cout << "University: " << Univer << endl
 		<< "Scholarship: " << Scholarship << endl << endl;
 }
