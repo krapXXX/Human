@@ -27,7 +27,7 @@ Boss::~Boss()
 
 void Boss::Salary()
 {
-	cout << "Salary of the boss: " << Salary << endl;
+	cout << "Salary of the boss: " << salary << endl;
 }
 
 void Boss::Output()
@@ -35,7 +35,7 @@ void Boss::Output()
 	cout << "Output Boss\n";
 	Human::Output();
 	cout << "Firm: " << Firm << endl
-		<< "Salary: " << Salary << endl << endl;
+		<< "Salary: " << salary << endl << endl;
 }
 
 void Boss::Input(const char* n, int a, const char* F, double S)

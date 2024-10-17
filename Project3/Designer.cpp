@@ -27,7 +27,7 @@ Designer::~Designer()
 
 void Designer::Salary()
 {
-	cout << "Salary of the designer: " << Salary << endl;
+	cout << "Salary of the designer: " << salary << endl;
 }
 
 void Designer::Output()
@@ -35,7 +35,7 @@ void Designer::Output()
 	cout << "Output Designer\n";
 	Human::Output();
 	cout << "Company: " << Company << endl
-		<< "Salary: " << Salary << endl << endl;
+		<< "Salary: " << salary << endl << endl;
 }
 
 void Designer::Input(const char* n, int a, const char* C, double S)

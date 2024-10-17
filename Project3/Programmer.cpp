@@ -27,7 +27,7 @@ Programmer::~Programmer()
 
 void Programmer::Salary()
 {
-	cout << "Salary of the programmer: " << Salary << endl;
+	cout << "Salary of the programmer: " << salary << endl;
 }
 
 void Programmer::Output()
@@ -35,7 +35,7 @@ void Programmer::Output()
 	cout << "Output Programmer\n";
 	Human::Output();
 	cout << "Company: " << Company << endl
-		<< "Salary: " << Salary << endl << endl;
+		<< "Salary: " << salary << endl << endl;
 }
 
 void Programmer::Input(const char* n, int a, const char* C, double S)

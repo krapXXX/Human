@@ -25,7 +25,7 @@ Student::~Student()
 }
 void Student::Salary()
 {
-	cout << "Scolarship of the student: " << Salary << endl;
+	cout << "Scolarship of the student: " << Scholarship << endl;
 }
 void Student::Output()
 {

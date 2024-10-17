@@ -27,7 +27,7 @@ Proff::~Proff()
 
 void Proff::Salary()
 {
-	cout << "Salary of the proffesor: " << Salary << endl;
+	cout << "Salary of the proffesor: " << salary << endl;
 }
 
 void Proff::Output()
@@ -35,7 +35,7 @@ void Proff::Output()
 	cout << "Output Proff\n";
 	Human::Output();
 	cout << "University: " << Uni << endl
-		<< "Salary: " << Salary << endl << endl;
+		<< "Salary: " << salary << endl << endl;
 }
 
 void Proff::Input(const char* n, int a, const char* U, double S)

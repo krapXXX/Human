@@ -10,7 +10,7 @@ using namespace std;
 
 int main()
 {
-	//Student s("Oleg",19,"Itstep",2000);
+	/*Student s("Oleg", 19, "Itstep", 2000);
 	Programmer p("Alex", 30, "Google", 65000);
 	Proff pr("Lily", 27, "N¹45", 15000);
 	Boss b;
@@ -19,7 +19,7 @@ int main()
 	l.Input("Igor", 52, "LUHU", 30000);
 	Designer d;
 	d.Input("Varya", 18, "Boo", 1500);
-	/*s.Output();
+	s.Output();
 	s.Input("Irina",20,"Politex",200);
 	s.Output();
 	d.Output();
@@ -40,9 +40,56 @@ int main()
 	switch (choice)
 	{
 	case 1: 
-		human = new Student;
-		human -> Input("Oleg", 19, "Itstep", 2000);
+		human = new Student("Oleg", 19, "Itstep", 2000);
+		break;
+	case 2:
+		human = new Programmer("Alex", 30, "Google", 65000);
+		break;
+	case 3:
+		human = new Proff("Lily", 27, "N¹45", 15000);
+		break;
+	case 4:
+		human = new Boss("Kate", 45, "Silk-SPA", 100000);
+		break;
+	case 5:
+		human = new Lawyer("Igor", 52, "LUHU", 30000);
+		break;
+	case 6:
+		human = new Designer("Varya", 18, "Boo", 1500);
 		break;
 	}
+	human->Output();
+
+
+	cout << "Whose salary you want to Print?" << endl;
+	cout << "1 - Student" << endl;
+	cout << "2 - Programmer" << endl;
+	cout << "3 - Proffesor" << endl;
+	cout << "4 - Boss" << endl;
+	cout << "5 - Lawyer" << endl;
+	cout << "6 - Designer" << endl;
+	cin >> choice;
+	switch (choice)
+	{
+	case 1:
+		human = new Student("Oleg", 19, "Itstep", 2000);
+		break;
+	case 2:
+		human = new Programmer("Alex", 30, "Google", 65000);
+		break;
+	case 3:
+		human = new Proff("Lily", 27, "N¹45", 15000);
+		break;
+	case 4:
+		human = new Boss("Kate", 45, "Silk-SPA", 100000);
+		break;
+	case 5:
+		human = new Lawyer("Igor", 52, "LUHU", 30000);
+		break;
+	case 6:
+		human = new Designer("Varya", 18, "Boo", 1500);
+		break;
+	}
+	human->Salary();
 
 }

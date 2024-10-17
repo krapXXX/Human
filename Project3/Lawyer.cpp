@@ -27,7 +27,7 @@ Lawyer::~Lawyer()
 
 void Lawyer::Salary()
 {
-	cout << "Salary of the lawyer: " << Salary << endl;
+	cout << "Salary of the lawyer: " << salary << endl;
 }
 
 void Lawyer::Output()
@@ -35,7 +35,7 @@ void Lawyer::Output()
 	cout << "Output Lawyer\n";
 	Human::Output();
 	cout << "Firm: " << Firm << endl
-		<< "Salary: " << Salary << endl << endl;
+		<< "Salary: " << salary << endl << endl;
 }
 
 void Lawyer::Input(const char* n, int a, const char* F, double S)
